@@ -1,0 +1,5 @@
+/vendor/
+/poo/vendor/
+.idea/
+.DS_Store
+

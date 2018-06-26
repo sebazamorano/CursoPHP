@@ -1,10 +1,35 @@
 <?php
-include "Persona.php";
+include_once "vendor/autoload.php";
 
-$persona1 = new Persona('Sebastian', 30, '16663224-2');
+// Aquí llamamos los archivos o clases que vamos a ocupar en este archivo
+use App\Persona;
+use App\Articulos\Bicicleta;
+use App\Hamburguesa;
+
+$biclicleta = new Bicicleta("azul");
+$biclicleta->setLuces(true);
+$biclicleta->setTipo('niños');
+echo $biclicleta->getTipo();
+echo '<br>';
+echo $biclicleta->avanzar();
+echo '<br>';
+echo $biclicleta->detenerse();
+echo '<br>';
+echo $biclicleta->encenderLuces();
+echo '<br>';
+
+$tipo = Hamburguesa::tipoPan();
+echo $tipo;
+
+
+$persona1 = new Persona('Sebastian', 30, '16663444-2');
 $persona1->setPeso(10);
-echo $persona1->getPeso();
-
+$persona1->getPeso();
+if ($persona1->isValidRut()) {
+    echo "El rut de {$persona1->nombre} es valido";
+} else {
+    echo "El rut no es valido";
+}
 $persona2 = new Persona('Pepito', 10, '1-9');
 $persona2->setApellido('Paga Doble');
 $persona2->setColorPelo('Azul');
@@ -28,6 +53,6 @@ foreach($array as $item) {
     $personas[] = new Persona($item['nombre'], $item['edad'], $item['rut']);
 }
 
-var_dump($personas[1]->nombre);
+//var_dump($personas[1]->nombre);
 
 

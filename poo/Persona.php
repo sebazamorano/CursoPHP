@@ -1,4 +1,7 @@
 <?php
+namespace App;
+
+use Freshwork\ChileanBundle\Rut;
 
 class Persona {
     //Atributos de mi Clase
@@ -17,9 +20,17 @@ class Persona {
         $this->rut = $rut;
     }
 
+    public function isValidRut() : bool
+    {
+        $rutPersona = explode('-', $this->rut);
+        // $rutPersona[0] = "16663224"
+        // $rutPersona[1] = "2"
+        $rut = new Rut($rutPersona[0], $rutPersona[1]);
+        return $rut->validate();
+    }
     public function getRut ()
     {
-        return $this->rut;
+        return "El rut de " . $this->nombre . " es " . $this->rut;
     }
 
     public function setPeso (int $peso)

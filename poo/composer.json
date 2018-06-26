@@ -1,0 +1,20 @@
+{
+    "name": "cursophp/poo",
+    "description": "Programación Orientada a Objetos con PHP",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Zamorano",
+            "email": "sebazamoranoj@gmail.com"
+        }
+    ],
+    "require": {
+        "freshwork/chilean-bundle": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "../poo/"
+        }
+    }
+}

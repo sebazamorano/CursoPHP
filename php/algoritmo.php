@@ -18,6 +18,13 @@ function ordenPorSeleccion (array &$array) {
         }
     }
 }
+$color = "azul";
+
+function cambiaColor (&$color) {
+    $color = 'Verder';
+}
+
+// $color ==> Verder
 
 $array = [8,7,1,9,2,6,3,4,5,10];
 ordenPorSeleccion($array);

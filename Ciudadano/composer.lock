@@ -1,0 +1,76 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4131debb88a3c8283e2512aba9cda1a5",
+    "packages": [
+        {
+            "name": "freshwork/chilean-bundle",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/freshworkstudio/ChileanBundle.git",
+                "reference": "76480562b93a4ab9f64beb0471ec92907a642627"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/freshworkstudio/ChileanBundle/zipball/76480562b93a4ab9f64beb0471ec92907a642627",
+                "reference": "76480562b93a4ab9f64beb0471ec92907a642627",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "^2.1",
+                "codeception/specify": "^0.4.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Freshwork\\ChileanBundle\\Laravel\\ChileanBundleServiceProvider"
+                    ],
+                    "aliases": {
+                        "Rut": "Freshwork\\ChileanBundle\\Facades\\Rut"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Freshwork\\ChileanBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gonzalo De Spirito | Freshwork Studio Chile",
+                    "email": "gonzalo@freshworkstudio.com"
+                }
+            ],
+            "description": "A PHP composer package with Chilean validations, common variables, etc. (RUT, IVA, ETC). Ready for Laravel 5. Grande chile ctm :)",
+            "keywords": [
+                "chile",
+                "freshwork",
+                "laravel",
+                "rut",
+                "tools",
+                "validation"
+            ],
+            "time": "2018-07-06T21:11:09+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

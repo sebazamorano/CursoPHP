@@ -7,7 +7,7 @@ class Persona {
     //Atributos de mi Clase
     public $nombre;
     public $edad;
-    public $rut;
+    protected $rut;
     protected $peso;
     protected $estatura;
     protected $color_pelo;
@@ -20,6 +20,11 @@ class Persona {
         $this->rut = $rut;
     }
 
+    public function getRut()
+    {
+        return $this->rut;
+    }
+
     public function isValidRut() : bool
     {
         $rutPersona = explode('-', $this->rut);
@@ -28,7 +33,7 @@ class Persona {
         $rut = new Rut($rutPersona[0], $rutPersona[1]);
         return $rut->validate();
     }
-    public function getRut ()
+    public function caminar ()
     {
         return "El rut de " . $this->nombre . " es " . $this->rut;
     }

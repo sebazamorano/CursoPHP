@@ -1,0 +1,20 @@
+{
+    "name": "sebazamorano/baraja",
+    "description": "POO de una Baraja de Cartas",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Zamorano",
+            "email": "sebazamoranoj@gmail.com"
+        }
+    ],
+    "require": {
+        "freshwork/chilean-bundle": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mazo\\": "./"
+        }
+    }
+}

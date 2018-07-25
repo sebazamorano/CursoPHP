@@ -5,21 +5,11 @@ use App\EjercicioHerencia\Dueno;
 use App\EjercicioHerencia\Felinos\Leon;
 use App\EjercicioHerencia\Caninos\Perro;
 
-$duenio = new Dueno('Sebastian', 30, '0-9');
-$duenio->setDomicilio('Phillips 16, Santiago Centro');
+use App\Baraja\Carta;
 
-$perro = new Perro('10kg', 'Quiltro');
-$perro->setNombre('bobby');
-$perro->setDueno($duenio);
-if ($perro->hasDueno()) {
-    //var_dump($perro->getDueno());
-    echo $perro->getDueno();
-}
+$carta = new Carta();
+$carta->setNumero(1);
+$carta->setTipo(2);
+var_dump($carta);
 
 
-
-//echo $perro->getNombre();
-echo '<br>';
-/*$leon = new Leon();
-echo $leon->ronronear();*/
-//var_dump($perro);
